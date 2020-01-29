@@ -261,7 +261,7 @@ public class WifiWizard2 extends CordovaPlugin {
     } else if (action.equals(SET_BIND_ALL)) {
       this.setBindAll(callbackContext);
     } else {
-      callbackContext.error("Incorrect action parameter: " + action);
+      callbackContext.error("Incorrect ELS action parameter: " + action+ "REF:"+SET_BIND_ALL );
       // The ONLY time to return FALSE is when action does not exist that was called
       // Returning false results in an INVALID_ACTION error, which translates to an error callback invoked on the JavaScript side
       // All other errors should be handled with the fail callback (callbackContext.error)
